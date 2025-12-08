@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+<div class="clock">
+    <div class="left">
+        <span id="hours"></span>:<span id="minutes"></span>
+    </div>
+
+    <div class="right">
+        <span id="seconds"></span>
+        <span id="ampm"></span>
+    </div>
+</div>
+
+<script>
+    function updateClock() {
+        let now = new Date();
+
+        let h = now.getHours();
+        let m = now.getMinutes();
+        let s = now.getSeconds();
+        let ampm = h >= 12 ? "PM" : "AM";
+
+        h = h % 12;
+        h = h ? h : 12; 
+
+        document.getElementById("hours").innerHTML = String(h).padStart(2, "0");
+        document.getElementById("minutes").innerHTML = String(m).padStart(2, "0");
+        document.getElementById("seconds").innerHTML = String(s).padStart(2, "0");
+        document.getElementById("ampm").innerHTML = ampm;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+</script>
+
 </body>
 </html>
