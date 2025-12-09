@@ -27,3 +27,18 @@ var div = (a,b) => {
 }
 
 console.log(div(10,20));
+
+//callback function
+
+function main(callback){
+    var sum = 10 + 20;
+    console.log("Sum is: " + sum);
+    callback();
+}
+
+function second(){
+    console.log("this is second function",num);
+}
+
+main(second);
+
