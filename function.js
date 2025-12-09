@@ -33,11 +33,11 @@ console.log(div(10,20));
 function main(callback){
     var sum = 10 + 20;
     console.log("Sum is: " + sum);
-    callback();
+    callback(sum);
 }
 
-function second(){
-    console.log("this is second function",num);
+function second(num){
+    console.log("this is second function", num);
 }
 
 main(second);
