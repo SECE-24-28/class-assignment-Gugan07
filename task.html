@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dyashin - Home</title>
+    <title>Dyashin - Home & About</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -11,50 +11,26 @@
 </head>
 <body>
 
-    <header class="bg-white">
-        <div class="container-fluid py-2 border-bottom">
+    <header class="bg-white sticky-top">
+        <div class="container-fluid py-2 border-bottom bg-white">
             <div class="row align-items-center">
-                
-                <div class="col-lg-3 col-md-4 d-flex align-items-center mb-2 mb-lg-0">
-                    <div class="logo-icon me-2">
-                        <i class="fa-solid fa-bolt"></i>
-                    </div>
+                <div class="col-lg-3 col-md-4 d-flex align-items-center">
+                    <div class="logo-icon me-2"><i class="fa-solid fa-bolt"></i></div>
                     <div class="logo-text lh-1">
                         <div class="fs-4 fw-bold">
                             <span class="text-orange">Dya</span><span class="text-blue">shin</span>
                         </div>
-                        <small class="text-muted" style="font-size: 0.6rem; letter-spacing: 1px;">Innovate • Collaborate • Accelerate</small>
                     </div>
                 </div>
-
-                <div class="col-lg-4 col-md-4 d-none d-md-flex justify-content-center">
+                <div class="col-lg-9 col-md-8 d-none d-md-flex justify-content-end align-items-center gap-4">
                     <div class="social-icons">
                         <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-solid fa-x"></i></a>
-                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
                     </div>
-                </div>
-
-                <div class="col-lg-5 col-md-4 d-flex justify-content-end align-items-center">
-                    <div class="d-flex align-items-center gap-3">
-                        <div class="phone-icon-circle">
-                            <i class="fa-solid fa-phone-volume"></i>
-                        </div>
-                        <div class="phone-details text-end">
-                            <p class="mb-0 text-muted fst-italic" style="font-size: 0.75rem;">Need help? Talk to an expert</p>
-                            <div class="d-flex justify-content-end gap-3" style="font-size: 0.85rem;">
-                                <div class="d-flex align-items-center gap-1 text-info fw-bold">
-                                    <img src="https://flagcdn.com/w20/us.png" width="15" alt="US"> +1 302 279 0052
-                                </div>
-                                <div class="d-flex align-items-center gap-1 text-info fw-bold">
-                                    <img src="https://flagcdn.com/w20/in.png" width="15" alt="IN"> +91 960 691 5923
-                                </div>
-                            </div>
-                        </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="phone-icon-circle"><i class="fa-solid fa-phone"></i></div>
+                        <span class="fw-bold fs-6 text-blue">+91 960 691 5923</span>
                     </div>
                 </div>
             </div>
@@ -81,99 +57,105 @@
         </nav>
     </header>
 
-    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
-        </div>
-
-        <div class="carousel-inner">
+    <section id="hero-section">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             
-            <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop');">
-                <div class="overlay-dark"></div>
-                <div class="shape-top-right"></div>
-                <div class="shape-bottom-blue"></div>
-                <div class="shape-bottom-grey"></div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+            </div>
 
-                <div class="container h-100 d-flex align-items-center position-relative z-2">
-                    <div class="col-md-7 text-white">
-                        <h1 class="display-4 fw-bold mb-3">Industries</h1>
-                        <p class="lead fs-6 mb-4">We cater to diverse industries' IT needs, leveraging subject matter experts to address specific requirements promptly and deliver substantial returns on investment for our clients.</p>
-                        <button class="btn btn-custom rounded-pill px-4 py-2">DISCOVER MORE</button>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop');">
+                    <div class="overlay-dark"></div>
+                    <div class="container h-100 d-flex align-items-center position-relative z-2">
+                        <div class="col-md-7 text-white">
+                            <h1 class="display-4 fw-bold mb-3">Industries</h1>
+                            <p class="lead fs-6 mb-4">We cater to diverse industries' IT needs, leveraging subject matter experts to address specific requirements promptly.</p>
+                            <button class="btn btn-custom rounded-pill px-4 py-2">DISCOVER MORE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2084&auto=format&fit=crop');">
+                    <div class="overlay-yellow"></div>
+                    <div class="container h-100 d-flex align-items-center position-relative z-2">
+                        <div class="col-md-7 text-white">
+                            <h1 class="display-4 fw-bold mb-3">Services</h1>
+                            <p class="lead fs-6 mb-4">We offer services in Learning, Consulting, and Projects. Learning includes Retail, Campus, and Corporate.</p>
+                            <button class="btn btn-custom rounded-pill px-4 py-2">DISCOVER MORE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop');">
+                    <div class="overlay-purple"></div>
+                    <div class="container h-100 d-flex align-items-center position-relative z-2">
+                        <div class="col-md-7 text-white">
+                            <h1 class="display-4 fw-bold mb-3">Products</h1>
+                            <p class="lead fs-6 mb-4">We stand at the forefront of technology, offering cutting-edge products that deliver unique solutions for both B2B and B2C.</p>
+                            <button class="btn btn-custom rounded-pill px-4 py-2">DISCOVER MORE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop');">
+                    <div class="overlay-gold"></div>
+                    <div class="container h-100 d-flex align-items-center position-relative z-2">
+                        <div class="col-md-7 text-white">
+                            <h1 class="display-4 fw-bold mb-3">Solutions</h1>
+                            <p class="lead fs-6 mb-4">We provide diverse IT solutions, with innovation at its core. Doing the same thing in a more innovative manner.</p>
+                            <button class="btn btn-custom rounded-pill px-4 py-2">DISCOVER MORE</button>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1585314062604-1a357de8b000?q=80&w=2070&auto=format&fit=crop');">
-                <div class="overlay-gold"></div>
-                <div class="shape-top-right"></div>
-                <div class="shape-bottom-blue"></div>
-                <div class="shape-bottom-grey"></div>
-
-                <div class="container h-100 d-flex align-items-center position-relative z-2">
-                    <div class="col-md-7 text-white">
-                        <h1 class="display-4 fw-bold mb-3">Solutions</h1>
-                        <p class="lead fs-6 mb-4">We provide diverse IT solutions, with innovation at its core. Adhering to the principle of "doing the same thing in a more innovative manner," our solutions, though similar in name, stand apart with unique innovation embedded within.</p>
-                        <button class="btn btn-custom rounded-pill px-4 py-2">DISCOVER MORE</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop');">
-                <div class="overlay-yellow"></div>
-                <div class="shape-top-right"></div>
-                <div class="shape-bottom-blue"></div>
-                <div class="shape-bottom-grey"></div>
-
-                <div class="container h-100 d-flex align-items-center position-relative z-2">
-                    <div class="col-md-7 text-white">
-                        <h1 class="display-4 fw-bold mb-3">Services</h1>
-                        <p class="lead fs-6 mb-4">We offer services in Learning, Consulting, and Projects. Learning includes Retail, Campus, and Corporate. Consulting covers Onetime Hire, Contract, and Contract to Hire. Project services include Fixed Bid and Time & Material models.</p>
-                        <button class="btn btn-custom rounded-pill px-4 py-2">DISCOVER MORE</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop');">
-                <div class="overlay-dark"></div>
-                <div class="shape-top-right"></div>
-                <div class="shape-bottom-blue"></div>
-                <div class="shape-bottom-grey"></div>
-
-                <div class="container h-100 d-flex align-items-center position-relative z-2">
-                    <div class="col-md-7 text-white">
-                        <h1 class="display-4 fw-bold mb-3">About</h1>
-                        <p class="lead fs-6 mb-4">We provide 360-degree solutions with cutting-edge technology, offering unique solutions. Our portfolio includes learning, consulting, and project services, ensuring client satisfaction and success.</p>
-                        <button class="btn btn-custom rounded-pill px-4 py-2">DISCOVER MORE</button>
-                    </div>
-                </div>
-            </div>
-
-             <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop');">
-                <div class="overlay-purple"></div>
-                <div class="shape-top-right"></div>
-                <div class="shape-bottom-blue"></div>
-                <div class="shape-bottom-grey"></div>
-
-                <div class="container h-100 d-flex align-items-center position-relative z-2">
-                    <div class="col-md-7 text-white">
-                        <h1 class="display-4 fw-bold mb-3">Products</h1>
-                        <p class="lead fs-6 mb-4">We stand at the forefront of technology, offering cutting-edge products that deliver unique solutions for both B2B and B2C sectors. Our innovative solutions address diverse customer needs, setting new standards in the industry.</p>
-                        <button class="btn btn-custom rounded-pill px-4 py-2">DISCOVER MORE</button>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </div>
+    </section>
 
-    <div class="chat-widget">
-        <i class="fa-solid fa-headset"></i>
-    </div>
+    <section class="about-section py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                
+                <div class="col-lg-6 position-relative mb-5 mb-lg-0">
+                    <div class="image-stack-wrapper">
+                        <div class="shape-pill-dark"></div>
+                        
+                        <div class="dots-pattern"></div>
+
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop" 
+                             alt="Meeting" class="img-fluid main-img">
+
+                        <div class="secondary-img-container">
+                             <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2032&auto=format&fit=crop" 
+                                  alt="Team" class="img-fluid sub-img">
+                             <div class="shape-pill-blue"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="about-content">
+                        <span class="badge-custom">ABOUT US</span>
+                        
+                        <h2 class="display-5 fw-bold mt-3 mb-4 text-dark">
+                            Work Together For Your Business
+                        </h2>
+                        
+                        <p class="text-secondary lh-lg">
+                            Dyashin Technosoft is a renowned <span class="fw-bold text-blue">Software Development</span> and <span class="fw-bold text-blue">Engineering services</span> company led by a group of industry veterans. With our passion, knowledge, and commitment to excellence, we believe in transforming the arena of <span class="fw-bold text-blue">software development</span> and empowering customer businesses to embrace the future and achieve amazing success.
+                        </p>
+                        <p class="text-secondary lh-lg">
+                            Our comprehensive range of custom software services & Solutions are designed to assist our customers at all stages of the SDLC, assuring project success from start to end and beyond.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
