@@ -20,3 +20,10 @@ console.log("---------------");
     return a * b;
 })(10, 20);
 
+//arrow function
+
+var div = (a,b) => {
+    return b / a;
+}
+
+console.log(div(10,20));
