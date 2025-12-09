@@ -1,8 +1,9 @@
+//named func
 function add(a, b) {
     return a + b;
 }
 
-console.llog(add(10, 20));
+console.log(add(10, 20));
 console.log("---------------");
 
 //anonymous function
@@ -12,3 +13,10 @@ var sub = function (a,b) {
 
 console.log(sub(10,20));
 console.log("---------------");
+
+//IIFE funcction - Immediate invoked function expression
+
+(function (a,b) {
+    return a * b;
+})(10, 20);
+
