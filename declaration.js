@@ -30,8 +30,6 @@ const d = 10;
 
  const { fname, lname, age, address } = person;
  const { city, pincode } = person.address;
- 
-
  console.log(person.fname);
  console.log(person.age);
  console.log(person.address.pincode);
