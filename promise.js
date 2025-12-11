@@ -45,4 +45,5 @@ const fetchUsers = ()=> {
     }
 };
 
+fetchUsers();
 
