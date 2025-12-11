@@ -21,7 +21,8 @@ Promise
 .catch((reject)=>console.log(reject));
 
 
-fetch("https://jsonplaceholder.typicode.com/users").then((response) => {
+fetch("https://jsonplaceholder.typicode.com/users")
+.then((response) => {
     console.log(response);
     let data = response.json();
     return data;
@@ -30,3 +31,18 @@ fetch("https://jsonplaceholder.typicode.com/users").then((response) => {
     console.log(data);
 })
 .catch((error) => console.log(error));
+
+//async & await
+
+const fetchUsers = ()=> {
+    try{
+        fetch("https://jsonplaceholder.typicode.com/users");
+        console.log("response",response);
+        response.json();
+        console.log("data", data);
+    } catch (error) {
+        console.error("error", error);
+    }
+};
+
+
