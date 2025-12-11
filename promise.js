@@ -19,3 +19,14 @@ Promise
 })
 .then((resolve)=>console.log(resolve))
 .catch((reject)=>console.log(reject));
+
+
+fetch("https://jsonplaceholder.typicode.com/users").then((response) => {
+    console.log(response);
+    let data = response.json();
+    return data;
+})
+.then((data) => {
+    console.log(data);
+})
+.catch((error) => console.log(error));
