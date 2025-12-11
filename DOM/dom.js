@@ -36,3 +36,10 @@ function hideText() {
 function showText() {
     head.style.display = "block";
 }
+function toggleText() {
+    if (head.style.display === "none") {
+        showText();
+    } else {
+        hideText();
+    }
+};
