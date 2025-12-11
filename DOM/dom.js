@@ -24,3 +24,15 @@ console.log(ele);
 
 let ele1 = document.querySelectorAll("div");
 
+let h2Ele = document.createElement("h2");
+h2Ele.innerText = "This is created by JS";
+
+document.getElementById("new").appendChild(h2Ele);
+
+
+function hideText() {
+    head.style.display = "none";
+}
+function showText() {
+    head.style.display = "block";
+}
