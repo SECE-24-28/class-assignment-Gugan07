@@ -42,4 +42,7 @@ function toggleText() {
     } else {
         hideText();
     }
-};
+}
+
+document.getElementById("hideBtn").addEventListener("click", hideText);
+document.getElementById("hideBtn").addEventListener("mouseOver", showText);
