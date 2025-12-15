@@ -106,6 +106,7 @@ function LoginPage() {
             value={formData.password}
             onChange={handleChange}
           />
+
           {errors.password && (
             <span style={{ color: "red" }}>{errors.password}</span>
           )}
