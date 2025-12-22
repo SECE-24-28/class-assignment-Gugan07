@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const folderPath = path.join(__dirname, "demo");
-
+const filePath = path.join(folderPath, "file.txt");
 const folderExist = fs.mkdirSync(folderPath);
 if(!folderExist){
 fs.mkdirSync(folderPath);
