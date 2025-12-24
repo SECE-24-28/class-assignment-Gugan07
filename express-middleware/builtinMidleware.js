@@ -32,7 +32,7 @@ app.get("/items", (req, res) => {
  app.put("/edit-items/:id",(req, res) => {
     const { id, itemName, price } = req.body;
     const item = items.find((item) => item.id === parseInt(id));
-
+ });
 
 let idFound = false;
 items.forEach((item) => {
@@ -44,7 +44,7 @@ items.forEach((item) => {
 });
 if(idFound){
     res.status(200).send(items);
-    
+
 }
 
  app.delete("/items/:id", (req, res) => {   
